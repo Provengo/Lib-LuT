@@ -37,7 +37,7 @@ The above table is captured in code like so:
 
 [source, javascript]
 ----
-const myLut = LUT.create({   <.>
+const myLut = LUT.create({                                                                <.>
     name: "Recommendations",
      ins: ["age","hobby"],
     outs: ["item","color"]
@@ -49,7 +49,7 @@ myLut.addRow({ ins:[LUT.Range(1,10),  "animals" ], outs:["frog doll", "green"   
 myLut.addRow({ ins:[LUT.Range(18,24), "travel"  ], outs:["backpack",  "blue"        ]});
 myLut.addRow({ ins:[LUT.ANY,          "beige"   ], outs:["bicycle",   "beige"       ]});
 
-myLut.addRow({                            <.>
+myLut.addRow({                                                                            <.>
     ins:{age:LUT.ANY, hobby:"beige"},   
     outs:["bicycle", "white"]
 });
@@ -58,8 +58,8 @@ myLut.addRow({
     outs:{item:"bicycle", color:"white"}
 });
 
-let useCase = request(myLut.generateLutEvents());  <.>
-let expected = myLut.lookup(useCase.data.ins);     <.>
+let useCase = request(myLut.generateLutEvents());                                         <.>
+let expected = myLut.lookup(useCase.data.ins);                                            <.>
 ----
 <.> Defining the lookup table: name, input and output column headers
 <.> Adding rows using column structure (technically, arrays)
