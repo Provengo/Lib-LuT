@@ -94,7 +94,7 @@ Adds a new row to the table. The `row` parameter is an object that has the follo
 
 | ins
 | Array or Object
-| Contains the _in_ values for the row, that is the values that are be matched against when looking up out values. Can contain explicit values and general matchers, such as `LUT.ANY` and `LUT.Range`. Values may be specified as an array, or using object keys. See xref:spec.sample-recommendations.js[] for usage examples.
+| Contains the _in_ values for the row, that is the values that are be matched against when looking up out values. Can contain explicit values and general matchers, such as `LUT.ANY` and `LUT.Range`. Values may be specified as an array, or using object keys. See xref:spec/js/sample-recommendations.js[] for usage examples.
 
 | outs
 | Array or Object
