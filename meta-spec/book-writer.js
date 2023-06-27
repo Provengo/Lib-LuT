@@ -12,7 +12,11 @@ function startTrace() {
 function documentEvent( event ) {
 
     GenBook.autoTag(event); // generate tags based on Combi and Choice events.
-
+    
+    // Additional line for handling LUT events.
+    if ( LUT.genBookStepHTML(event, TEST_SCENARIO) ) return;
+    // if ( LUT.genBookStepXLS(event, TEST_SCENARIO) ) return;
+    
     const d = event.data;
     if ( d ) {
         if ( d.lib == "Manual" ){

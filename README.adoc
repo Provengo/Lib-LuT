@@ -84,6 +84,8 @@ xref:lib/lut.js[]::
     The library itself. Put this file in your project's `lib/` directory in order to use it.
 xref:spec/js/sample-recommendations.js[]::
     A sample client code for this library. Creates test cases based on the lookup table defined in xref:data/recommendations.js[].
+xref:meta-spec/book-writer.js[]::
+    A manual test book creation script. Uses a method from the library to handle LUT library events.
 xref:Reference.adoc[]::
     API Reference of the library.
 
