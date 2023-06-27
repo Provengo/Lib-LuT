@@ -91,7 +91,12 @@ xref:Reference.adoc[]::
 
 == Installation
 
-To install, place the library's source file, xref:lib/lut.js[], in the `lib` folder of your project. 
+To install, place the library's source file, xref:lib/lut.js[], in the `lib` folder of your project. To download directly from this site, write the following snippet at your project's root directory:
+
+[source, bash]
+----
+curl https://raw.githubusercontent.com/Provengo/Lib-LuT/main/lib/lut.js > lib/lut.js
+----
 
 == Documentation
 
